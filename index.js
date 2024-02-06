@@ -28,24 +28,24 @@ const posts = [
     }
 ]
 
-const postEl = document.getElementById("post-el")
+// const postEl = document.getElementById("post-el")
 
-const users = posts.map((post, index) => {
-    let section = document.createElement("section");
-    section.className = "container flex";
-    section.innerHTML =` <img src="${post.avatar}" class="img-round">
-                <span>
-                    <h1>${post.name}</h2>
-                    <p>${post.location}</p>
-                </span>`;
+// const users = posts.map((post, index) => {
+//     let section = document.createElement("section");
+//     section.className = "container flex";
+//     section.innerHTML =` <img src="${post.avatar}" class="img-round">
+//                 <span>
+//                     <h1>${post.name}</h2>
+//                     <p>${post.location}</p>
+//                 </span>`;
     
-     postEl.append(section);
+//      postEl.append(section);
      
-     let section2 = document.createElement("section");
-     section2.className = "container";
-     section2.innerHTML = `<img src="${post.post}" class="img-post">`;
+//      let section2 = document.createElement("section");
+//      section2.className = "container";
+//      section2.innerHTML = `<img src="${post.post}" class="img-post">`;
     
-    postEl.appendChild(section2);
+//     postEl.appendChild(section2);
     
     // let section3 = document.createElement("section");
     // section3.className = "container";
@@ -76,7 +76,7 @@ const users = posts.map((post, index) => {
     
 //     });
   
-});
+// });
 
     
 
@@ -84,6 +84,33 @@ const users = posts.map((post, index) => {
 window.onload('load', () => { 
     return users;
 })
+
+function work() { /*...*/
+    const postEl = document.getElementById("post-el")
+
+    return posts.map((post, index) => {
+        let section = document.createElement("section");
+        section.className = "container flex";
+        section.innerHTML = ` <img src="${post.avatar}" class="img-round">
+                <span>
+                    <h1>${post.name}</h2>
+                    <p>${post.location}</p>
+                </span>`;
+    
+        postEl.append(section);
+
+    })
+
+};
+
+
+if (document.readyState == 'loading') {
+  // still loading, wait for the event
+  document.addEventListener('DOMContentLoaded', work);
+} else {
+  // DOM is ready!
+  work();
+}
 
 
 // show an element
