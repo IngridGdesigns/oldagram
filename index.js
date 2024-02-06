@@ -64,7 +64,7 @@ return posts.map((post, index) => {
      postEl.append(section3);
 
     
-    const btnHeart = document.getElementById("btn-heart");
+    // const btnHeart = document.getElementById("btn-heart");
     let likesEl = document.getElementsByClassName("likes");
     
    let counts = post.likes
@@ -77,9 +77,12 @@ return posts.map((post, index) => {
         likesEl[index].innerHTML = `${counts} likes`;
     
     });
+
+    document.append(postEl);
   
 });
 
+    
 }
 
 //loads function when page loads
