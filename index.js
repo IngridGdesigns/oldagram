@@ -92,25 +92,25 @@ function work() { /*...*/
     posts.forEach((post, index) => {
        
         postsEl.innerHTML += `<section class="container flex">
-                <img src="${post.avatar}" class="img-round avatar">
+                <img src="${post[index].avatar}" class="img-round avatar">
                 <span>
-                    <h1>${post.name}</h2>
-                    <p>${post.location}</p>
+                    <h1>${post[index].name}</h2>
+                    <p>${post[index].location}</p>
                 </span>
             </section>
             
             <section class="container" >
-                <img src="${post.post}" class="img-post">
+                <img src="${post[index].post}" class="img-post">
             </section>
             
             <section class="container">
                 <div class="flex space">
-                    <input id="btn-heart" type="image" src="images/icon-heart.png" class="icon heart" alt="Submit">
+                    <input id="btn-heart" type="image" src="./images/icon-heart.png" class="icon heart" alt="Submit">
                     <img src="images/icon-comment.png" class="icon">
                     <img src="images/icon-dm.png" class="icon">
                 </div>
-                <h2 class="space likes">${post.likes} likes</h2>
-                <p class="padding-btm space"><span class="bold">${post.username}</span> ${post.comment}</p>
+                <h2 class="space likes">${post[index].likes} likes</h2>
+                <p class="padding-btm space"><span class="bold">${post[index].username}</span> ${post[index].comment}</p>
             </section>`;
             
     });
