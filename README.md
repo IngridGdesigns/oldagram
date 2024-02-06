@@ -1,5 +1,4 @@
 
-
 # Oldagram
 
 Solo project to build a Oldagram (fake instagram mini page), 
