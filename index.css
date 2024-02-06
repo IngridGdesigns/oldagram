@@ -12,6 +12,14 @@ html, body {
     background-color: #fff;
 }
 
+#post-el {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+
+
 /*images */
 .img-round {
     border-radius: 50%;
