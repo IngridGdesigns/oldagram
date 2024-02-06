@@ -39,10 +39,11 @@ html, body {
 
    input[type=button],
    input[type=submit] {
-       background: url('images/icon-heart.png');
+       background: url('images/icon-heart.png') no-repeat;
        border: none;
        cursor: pointer;
-       width: 8%;
+       width: 20px;
+       height: 20px;
        /* border: none;
        color: #fff;
        padding: 15px 30px;
