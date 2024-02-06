@@ -1,12 +1,13 @@
 // import imgAvatarVG from './images/avatar-vangogh.jpg'
 // import imgPost from './images/post-vangogh.jpg'
+ import Img1 from './images/photo-1.jpg'
 
 const posts = [
     {
         name: "Vincent van Gogh",
         username: "vincey1853",
         location: "Zundert, Netherlands",
-        avatar: "./images/avatar-vangogh.jpg",
+        avatar: Img1,
         post: "./images/post-vangogh.jpg",
         comment: "just took a few mushrooms lol",
         likes: 21
