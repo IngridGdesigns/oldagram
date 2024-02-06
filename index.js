@@ -5,8 +5,8 @@ const posts = [
         name: "Vincent van Gogh",
         username: "vincey1853",
         location: "Zundert, Netherlands",
-        avatar: "public/images/avatar-vangogh.jpg",
-        post: "public/images/post-vangogh.jpg",
+        avatar: "images/avatar-vangogh.jpg",
+        post: "images/post-vangogh.jpg",
         comment: "just took a few mushrooms lol",
         likes: 21
     },
@@ -14,8 +14,8 @@ const posts = [
         name: "Gustave Courbet",
         username: "gus1819",
         location: "Ornans, France",
-        avatar: "public/images/avatar-courbet.jpg",
-        post: "public/images/post-courbet.jpg",
+        avatar: "images/avatar-courbet.jpg",
+        post: "images/post-courbet.jpg",
         comment: "i'm feelin a bit stressed tbh",
         likes: 4
     },
