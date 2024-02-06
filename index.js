@@ -78,7 +78,7 @@ return posts.map((post, index) => {
     
     });
 
-    document.append(postEl);
+    document.body.append(postEl);
   
 });
 
