@@ -1,12 +1,12 @@
-// import imgVangohAvatar from 'images/avatar-vangogh.jpg';
+// import imgVangohAvatar from './public/images/'
 
 const posts = [
     {
         name: "Vincent van Gogh",
         username: "vincey1853",
         location: "Zundert, Netherlands",
-        avatar: "/images/avatar-vangogh.jpg",
-        post: "/images/post-vangogh.jpg",
+        avatar: ".public/images/avatar-vangogh.jpg",
+        post: ".public/images/post-vangogh.jpg",
         comment: "just took a few mushrooms lol",
         likes: 21
     },
