@@ -88,27 +88,32 @@ const posts = [
 const postEl = document.getElementById("post-el");
 
 function work() { /*...*/
-
-
-    posts.forEach((post, index) => {
-        let section = document.createElement("section");
-        section.className = "container flex";
-
-        let image = document.createElement("img");
-        image.src = `${post.avatar}`
-        image.className = "img-round";
-
-        section.appendChild(image);
-        // postEl.appendChild(section);
-        // section.innerHTML = ` <img src="${post.avatar}" class="img-round">
-        //         <span>
-        //             <h1>${post.name}</h2>
-        //             <p>${post.location}</p>
-        //         </span>`;
     
-        postEl.append(section);
-    })
-
+    posts.forEach((post, index) => {
+       
+        postEl.innerHTML += `<section class="container flex">
+                <img src="${post.avatar}" class="img-round">
+                <span>
+                    <h1>${post.name}</h2>
+                    <p>${post.location}</p>
+                </span>
+            </section>`;
+            
+            // <section class="container" >
+            //     <img src="images/${post.post}" class="img-post">
+            // </section>
+            
+            // <section class="container">
+            //     <div class="flex">
+            //         <input id="btn-heart" type="image" src="images/icon-heart.png" class="icon heart" alt="Submit">
+            //         <img src="images/icon-comment.png" class="icon">
+            //         <img src="images/icon-dm.png" class="icon">
+            //     </div>
+            //     <h2 id="space likes">${post.likes} likes</h2>
+            //     <p class="padding-btm space"><span class="bold">vincy1853</span> just took a few mushrooms lol</p>
+            // </section>
+            
+    });
 };
 
 document.onload = work()
