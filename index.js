@@ -94,24 +94,24 @@ function work() { /*...*/
         let section = document.createElement("section");
         section.className = "container flex";
 
-        // let image = document.createElement("img");
-        // image.src = `${post.avatar}`
-        // image.className = "img-round";
+        let image = document.createElement("img");
+        image.src = `${post.avatar}`
+        image.className = "img-round";
 
-        // section.appendChild(image);
+        section.appendChild(image);
         // postEl.appendChild(section);
-        section.innerHTML = ` <img src="${post.avatar}" class="img-round">
-                <span>
-                    <h1>${post.name}</h2>
-                    <p>${post.location}</p>
-                </span>`;
+        // section.innerHTML = ` <img src="${post.avatar}" class="img-round">
+        //         <span>
+        //             <h1>${post.name}</h2>
+        //             <p>${post.location}</p>
+        //         </span>`;
     
-        postEl.after(section);
+        postEl.append(section);
     })
 
 };
 
-work()
+document.onload = work()
 
 // if (document.readyState == 'loading') {
 //   // still loading, wait for the event
