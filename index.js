@@ -30,9 +30,9 @@ const posts = [
 
 const postEl = document.getElementById("post-el")
 
+function oldagram(){
 
-
-const users = posts.map((post, index) => {
+return posts.map((post, index) => {
     let section = document.createElement("section");
     section.className = "container flex";
     section.innerHTML =` <img src="${post.avatar}" class="img-round">
@@ -80,28 +80,6 @@ const users = posts.map((post, index) => {
   
 });
 
+}
 
-
-/* 
- <section class="container flex">
-                <img src="images/avatar-vangogh.jpg" class="img-round">
-                <span>
-                    <h1>Vincent van Gogh</h2>
-                    <p>Zudert, Netherlands</p>
-                </span>
-            </section>
-            
-            <section class="container" >
-                <img src="images/post-vangogh.jpg" class="img-post">
-            </section>
-            
-            <section class="container">
-                <div class="flex">
-                    <input id="btn-heart" type="image" src="images/icon-heart.png" class="icon heart" alt="Submit">
-                    <img src="images/icon-comment.png" class="icon">
-                    <img src="images/icon-dm.png" class="icon">
-                </div>
-                <h2 id="likes">0 likes</h2>
-                <p><span class="bold">vincy1853</span> just took a few mushrooms lol</p>
-            </section>
-            */
+oldagram()
