@@ -43,7 +43,9 @@ html, body {
        background-repeat: no-repeat;
        border: none;
        cursor: pointer;
-       background-size: 10% auto;
+       background-size: cover;
+       background-position: center;
+       height: 28px;
        /* border: none;
        color: #fff;
        padding: 15px 30px;
