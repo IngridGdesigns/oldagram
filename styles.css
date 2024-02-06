@@ -40,16 +40,7 @@ html, body {
 /* input[type="submit"]{
    background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
 }  */
-input[type=button]:focus,
-input[type=submit]:focus {
-    background-color: #8163f0;
-    /* border: none;
-    color: #fff;
-    padding: 15px 30px;
-    text-decoration: none;
-    margin: 4px 2px; */
-    cursor: pointer;
-}
+
 
 /* header */
 
