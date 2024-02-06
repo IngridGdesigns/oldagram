@@ -30,8 +30,6 @@ const posts = [
 
 const postEl = document.getElementById("post-el")
 
-
-
 const users = posts.map((post, index) => {
     let section = document.createElement("section");
     section.className = "container flex";
@@ -86,3 +84,9 @@ const users = posts.map((post, index) => {
 window.onload('load', () => { 
     return users;
 })
+
+
+// show an element
+const show = elem => {
+  elem.style.display = 'flex'
+}
