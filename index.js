@@ -1,11 +1,12 @@
-import imgVangohAvatar from './images.'
+// import imgVangohAvatar from 'images/avatar-vangogh.jpg';
+
 const posts = [
     {
         name: "Vincent van Gogh",
         username: "vincey1853",
         location: "Zundert, Netherlands",
-        avatar: "./images/avatar-vangogh.jpg",
-        post: "./images/post-vangogh.jpg",
+        avatar: "/images/avatar-vangogh.jpg",
+        post: "/images/post-vangogh.jpg",
         comment: "just took a few mushrooms lol",
         likes: 21
     },
@@ -49,9 +50,9 @@ function work() { /*...*/
             
             <section class="container">
                 <div class="flex space">
-                    <input id="btn-heart" type="image" src="./images/icon-heart.png" class="icon heart" alt="Submit">
-                    <img src="./images/icon-comment.png" class="icon">
-                    <img src="./images/icon-dm.png" class="icon">
+                    <input id="btn-heart" type="image" src="images/icon-heart.png" class="icon heart" alt="Submit">
+                    <img src="images/icon-comment.png" class="icon">
+                    <img src="images/icon-dm.png" class="icon">
                 </div>
                 <h2 class="space likes">${posts[i].likes} likes</h2>
                 <p class="padding-btm space"><span class="bold">${posts[i].username}</span> ${posts[i].comment}</p>
