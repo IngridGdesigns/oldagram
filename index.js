@@ -1,9 +1,12 @@
-import avatar1 from './images/avatar-vangogh.jpg'
-import avatar2 from './images/avatar-courbet.jpg'
-import avatar3 from './images/avatar-ducreux.jpg'
-import post1 from './images/post-vangogh.jpg'
-import post2 from './images/post-courbet.jpg'
-import post3 from './images/post-ducreux.jpg'
+import avatar1 from './images/avatar-vangogh.jpg';
+import avatar2 from './images/avatar-courbet.jpg';
+import avatar3 from './images/avatar-ducreux.jpg';
+import post1 from './images/post-vangogh.jpg';
+import post2 from './images/post-courbet.jpg';
+import post3 from './images/post-ducreux.jpg';
+import heart from './images/icon-heart.png';
+import comment from './images/icon-comment.png';
+import dm from './images/icon-dm.png';
  
 
 const posts = [
@@ -56,9 +59,9 @@ function work() { /*...*/
             
             <section class="container">
                 <div class="flex space">
-                    <input id="btn-heart" type="image" src="./images/icon-heart.png" class="icon heart" alt="Submit">
-                    <img src="./images/icon-comment.png" class="icon">
-                    <img src="./images/icon-dm.png" class="icon">
+                    <input id="btn-heart" type="image" src="${heart}" class="icon heart" alt="Submit">
+                    <img src="${comment}" class="icon">
+                    <img src="${dm}" class="icon">
                 </div>
                 <h2 class="space likes">${posts[i].likes} likes</h2>
                 <p class="padding-btm space"><span class="bold">${posts[i].username}</span> ${posts[i].comment}</p>
