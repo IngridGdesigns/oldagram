@@ -82,4 +82,7 @@ return posts.map((post, index) => {
 
 }
 
-oldagram()
+//loads function when page loads
+window.addEventListener('load', () => { 
+  oldagram()
+})
