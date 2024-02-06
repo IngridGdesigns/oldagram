@@ -45,36 +45,36 @@ const users = posts.map((post, index) => {
      section2.className = "container";
      section2.innerHTML = `<img src="${post.post}" class="img-post">`;
     
-    postEl.append(section2);
+    postEl.appendChild(section2);
     
-    let section3 = document.createElement("section");
-    section3.className = "container";
+    // let section3 = document.createElement("section");
+    // section3.className = "container";
    
-    section3.innerHTML = `
-                <div class="flex space">
-                    <input id="btn-heart" type="image" src="images/icon-heart.png" class="icon heart" alt="Submit">
-                    <img src="images/icon-comment.png" class="icon">
-                    <img src="images/icon-dm.png" class="icon">
-                </div>
-                <h2 class="space likes">${post.likes} likes</h2>
-                <p class="padding-btm space"><span class="bold">${post.username} </span>${post.comment}</p>`;
+    // section3.innerHTML = `
+    //             <div class="flex space">
+    //                 <input id="btn-heart" type="image" src="images/icon-heart.png" class="icon heart" alt="Submit">
+    //                 <img src="images/icon-comment.png" class="icon">
+    //                 <img src="images/icon-dm.png" class="icon">
+    //             </div>
+    //             <h2 class="space likes">${post.likes} likes</h2>
+    //             <p class="padding-btm space"><span class="bold">${post.username} </span>${post.comment}</p>`;
             
-     postEl.append(section3);
+    //  postEl.append(section3);
 
     
     // const btnHeart = document.getElementById("btn-heart");
-    let likesEl = document.getElementsByClassName("likes");
+//     let likesEl = document.getElementsByClassName("likes");
     
-   let counts = post.likes
+//    let counts = post.likes
 
-    let allInputs = document.querySelectorAll("input");
-    allInputs[index].addEventListener("click", function(e){
+//     let allInputs = document.querySelectorAll("input");
+//     allInputs[index].addEventListener("click", function(e){
        
-        counts = counts + 1
+//         counts = counts + 1
         
-        likesEl[index].innerHTML = `${counts} likes`;
+//         likesEl[index].innerHTML = `${counts} likes`;
     
-    });
+//     });
   
 });
 
