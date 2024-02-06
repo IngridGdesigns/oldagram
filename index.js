@@ -28,6 +28,56 @@ const posts = [
     }
 ]
 
+const postsEl = document.getElementById("all-posts");
+
+function work() { /*...*/
+    
+    for (let i = 0; i < posts.length; i++) {
+       
+        postsEl.innerHTML += `<section class="container flex">
+                <img src="${posts[i].avatar}" class="img-round avatar">
+                <span>
+                    <h1>${posts[i].name}</h2>
+                    <p>${posts[i].location}</p>
+                </span>
+            </section>
+            
+            <section class="container" >
+                <img src="${posts[i].post}" class="img-post">
+            </section>
+            
+            <section class="container">
+                <div class="flex space">
+                    <input id="btn-heart" type="image" src="./images/icon-heart.png" class="icon heart" alt="Submit">
+                    <img src="images/icon-comment.png" class="icon">
+                    <img src="images/icon-dm.png" class="icon">
+                </div>
+                <h2 class="space likes">${posts[i].likes} likes</h2>
+                <p class="padding-btm space"><span class="bold">${posts[i].username}</span> ${posts[i].comment}</p>
+            </section>`;
+            
+    };
+
+    const btnHeart = document.getElementById("btn-heart");
+    let likesEl = document.getElementsByClassName("likes");
+    
+    posts.forEach((post, index) => {
+
+    let allInputs = document.querySelectorAll("input");
+    allInputs[index].addEventListener("click", function(e){
+       
+        let counts = post.likes + 1;
+
+        likesEl[index].innerHTML = `${counts} likes`;
+    
+        });
+    })
+  
+};
+
+document.onload = work()
+
+
 // const postEl = document.getElementById("post-el")
 
 // const users = posts.map((post, index) => {
@@ -84,50 +134,3 @@ const posts = [
 // window.onload('load', () => { 
 //     return users;
 // })
-
-const postsEl = document.getElementById("all-posts");
-
-function work() { /*...*/
-    
-    posts.forEach((post, index) => {
-       
-        postsEl.innerHTML += `<section class="container flex">
-                <img src="${post.avatar}" class="img-round avatar">
-                <span>
-                    <h1>${post.name}</h2>
-                    <p>${post.location}</p>
-                </span>
-            </section>
-            
-            <section class="container" >
-                <img src="${post.post}" class="img-post">
-            </section>
-            
-            <section class="container">
-                <div class="flex space">
-                    <input id="btn-heart" type="image" src="./images/icon-heart.png" class="icon heart" alt="Submit">
-                    <img src="images/icon-comment.png" class="icon">
-                    <img src="images/icon-dm.png" class="icon">
-                </div>
-                <h2 class="space likes">${post.likes} likes</h2>
-                <p class="padding-btm space"><span class="bold">${post.username}</span> ${post.comment}</p>
-            </section>`;
-            
-    });
-};
-
-document.onload = work()
-
-// if (document.readyState == 'loading') {
-//   // still loading, wait for the event
-//   document.addEventListener('DOMContentLoaded', work);
-// } else {
-//   // DOM is ready!
-//   work();
-// }
-
-
-// show an element
-const show = elem => {
-  elem.style.display = 'flex'
-}
