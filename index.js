@@ -1,14 +1,18 @@
-// import imgAvatarVG from './images/avatar-vangogh.jpg'
-// import imgPost from './images/post-vangogh.jpg'
- import Img1 from './images/avatar-vangogh.jpg'
+import avatar1 from './images/avatar-vangogh.jpg'
+import avatar2 from './images/avatar-courbet.jpg'
+import avatar3 from './images/avatar-ducreux.jpg'
+import post1 from './images/post-vangogh.jpg'
+import post2 from './images/post-courbet.jpg'
+import post3 from './images/post-ducreux.jpg'
+ 
 
 const posts = [
     {
         name: "Vincent van Gogh",
         username: "vincey1853",
         location: "Zundert, Netherlands",
-        avatar: Img1,
-        post: "./images/post-vangogh.jpg",
+        avatar: avatar1,
+        post: post1,
         comment: "just took a few mushrooms lol",
         likes: 21
     },
@@ -16,8 +20,8 @@ const posts = [
         name: "Gustave Courbet",
         username: "gus1819",
         location: "Ornans, France",
-        avatar: "images/avatar-courbet.jpg",
-        post: "images/post-courbet.jpg",
+        avatar: avatar2,
+        post: post2,
         comment: "i'm feelin a bit stressed tbh",
         likes: 4
     },
@@ -25,8 +29,8 @@ const posts = [
         name: "Joseph Ducreux",
         username: "jd1735",
         location: "Paris, France",
-        avatar: "images/avatar-ducreux.jpg",
-        post: "images/post-ducreux.jpg",
+        avatar: avatar3,
+        post: post3,
         comment: "gm friends! which coin are YOU stacking up today?? \npost below and WAGMI!",
         likes: 152
     }
