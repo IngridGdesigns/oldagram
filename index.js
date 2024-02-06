@@ -30,9 +30,9 @@ const posts = [
 
 const postEl = document.getElementById("post-el")
 
-function oldagram(){
 
-return posts.map((post, index) => {
+
+const users = posts.map((post, index) => {
     let section = document.createElement("section");
     section.className = "container flex";
     section.innerHTML =` <img src="${post.avatar}" class="img-round">
@@ -77,15 +77,12 @@ return posts.map((post, index) => {
         likesEl[index].innerHTML = `${counts} likes`;
     
     });
-
-    document.body.append(postEl);
   
 });
 
     
-}
 
-//loads function when page loads
-window.addEventListener('load', () => { 
-  oldagram()
+// //loads function when page loads
+window.onload('load', () => { 
+    return users;
 })
