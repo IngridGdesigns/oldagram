@@ -58,8 +58,7 @@ html, body {
 
 input[type=button]:focus,
 input[type="submit"]:focus{
-    background: linear-gradient(to top left, red 20%, transparent 80%),
-        url('images/red-heart.png') center / cover no-repeat;
+    background: url('images/red-heart.png') center / cover no-repeat;
 } 
 
 
