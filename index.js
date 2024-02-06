@@ -85,33 +85,33 @@ const posts = [
 //     return users;
 // })
 
-const postEl = document.getElementById("post-el");
+const postsEl = document.getElementById("all-posts");
 
 function work() { /*...*/
     
     posts.forEach((post, index) => {
        
-        postEl.innerHTML += `<section class="container flex">
-                <img src="${post.avatar}" class="img-round">
+        postsEl.innerHTML += `<section class="container flex">
+                <img src="${post.avatar}" class="img-round avatar">
                 <span>
                     <h1>${post.name}</h2>
                     <p>${post.location}</p>
                 </span>
+            </section>
+            
+            <section class="container" >
+                <img src="${post.post}" class="img-post">
+            </section>
+            
+            <section class="container">
+                <div class="flex space">
+                    <input id="btn-heart" type="image" src="images/icon-heart.png" class="icon heart" alt="Submit">
+                    <img src="images/icon-comment.png" class="icon">
+                    <img src="images/icon-dm.png" class="icon">
+                </div>
+                <h2 class="space likes">${post.likes} likes</h2>
+                <p class="padding-btm space"><span class="bold">${post.username}</span> ${post.comment}</p>
             </section>`;
-            
-            // <section class="container" >
-            //     <img src="images/${post.post}" class="img-post">
-            // </section>
-            
-            // <section class="container">
-            //     <div class="flex">
-            //         <input id="btn-heart" type="image" src="images/icon-heart.png" class="icon heart" alt="Submit">
-            //         <img src="images/icon-comment.png" class="icon">
-            //         <img src="images/icon-dm.png" class="icon">
-            //     </div>
-            //     <h2 id="space likes">${post.likes} likes</h2>
-            //     <p class="padding-btm space"><span class="bold">vincy1853</span> just took a few mushrooms lol</p>
-            // </section>
             
     });
 };
