@@ -81,36 +81,45 @@ const posts = [
     
 
 // //loads function when page loads
-window.onload('load', () => { 
-    return users;
-})
+// window.onload('load', () => { 
+//     return users;
+// })
+
+const postEl = document.getElementById("post-el");
 
 function work() { /*...*/
-    const postEl = document.getElementById("post-el")
 
-    return posts.map((post, index) => {
+
+    posts.forEach((post, index) => {
         let section = document.createElement("section");
         section.className = "container flex";
+
+        // let image = document.createElement("img");
+        // image.src = `${post.avatar}`
+        // image.className = "img-round";
+
+        // section.appendChild(image);
+        // postEl.appendChild(section);
         section.innerHTML = ` <img src="${post.avatar}" class="img-round">
                 <span>
                     <h1>${post.name}</h2>
                     <p>${post.location}</p>
                 </span>`;
     
-        postEl.append(section);
-
+        postEl.after(section);
     })
 
 };
 
+work()
 
-if (document.readyState == 'loading') {
-  // still loading, wait for the event
-  document.addEventListener('DOMContentLoaded', work);
-} else {
-  // DOM is ready!
-  work();
-}
+// if (document.readyState == 'loading') {
+//   // still loading, wait for the event
+//   document.addEventListener('DOMContentLoaded', work);
+// } else {
+//   // DOM is ready!
+//   work();
+// }
 
 
 // show an element
