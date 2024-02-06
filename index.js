@@ -65,7 +65,6 @@ function work() { /*...*/
 
     let allInputs = document.querySelectorAll("input");
     allInputs[index].addEventListener("click", function(e){
-       
         let counts = post.likes + 1;
 
         likesEl[index].innerHTML = `${counts} likes`;
