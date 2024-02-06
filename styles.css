@@ -55,9 +55,11 @@ html, body {
     src="${heart}"
        */
    }
- 
+   
+input[type=button]:focus,
 input[type="submit"]:focus{
-   background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+    background: linear-gradient(to top left, red 20%, transparent 80%),
+        url('images/icon-heart.png') center / cover no-repeat;
 } 
 
 
