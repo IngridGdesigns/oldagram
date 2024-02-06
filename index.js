@@ -59,7 +59,7 @@ function work() { /*...*/
             
             <section class="container">
                 <div class="flex space">
-                    <input id="btn-heart" type="image" src="${heart}" class="icon heart" alt="Submit">
+                    <input id="btn-heart" type="button" class="icon heart" alt="Submit">
                     <img src="${comment}" class="icon">
                     <img src="${dm}" class="icon">
                 </div>
