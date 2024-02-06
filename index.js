@@ -1,6 +1,6 @@
 // import imgAvatarVG from './images/avatar-vangogh.jpg'
 // import imgPost from './images/post-vangogh.jpg'
- import Img1 from './images/photo-1.jpg'
+ import Img1 from './images/avatar-vangogh.jpg'
 
 const posts = [
     {
