@@ -70,7 +70,7 @@ function postElements() { /*...*/
             
     };
 
-    let likesEl = document.getElementsByClassName("likes");
+    let numberOfLikesElement = document.getElementsByClassName("likes");
     
     posts.forEach((post, index) => {
 
@@ -83,7 +83,7 @@ function postElements() { /*...*/
 
             let counts = post.likes + 1;
 
-            likesEl[index].innerHTML = `${counts} likes`;
+            numberOfLikesElement[index].innerHTML = `${counts} likes`;
     
         });
     })
