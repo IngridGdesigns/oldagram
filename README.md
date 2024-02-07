@@ -3,7 +3,7 @@
 
 Solo project to build a Oldagram (fake instagram mini page) using DOM, HTML, CSS. 
 
-Live site: [Artistgram](artistgram.netlify.app/)
+Live site: [Artistgram](https://artistgram.netlify.app/)
 
 <img src="https://github.com/IngridGdesigns/oldagram/blob/main/images/appScreenshot.png" width="50%" height="50%">
 
