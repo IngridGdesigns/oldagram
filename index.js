@@ -70,7 +70,6 @@ function work() { /*...*/
             
     };
 
-    const btnHeart = document.getElementById("btn-heart");
     let likesEl = document.getElementsByClassName("likes");
     
     posts.forEach((post, index) => {
@@ -78,7 +77,8 @@ function work() { /*...*/
     let allInputs = document.querySelectorAll("input");
         allInputs[index].addEventListener("click", function (e) {
             e.preventDefault();
-                
+
+            const btnHeart = document.getElementsByClassName("heart");   
             btnHeart[index].style = `background: url('${redHeart}') center / cover no-repeat`
             // btnHeart[index].style= "height: 30px"
 
