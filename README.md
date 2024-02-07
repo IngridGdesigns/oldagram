@@ -8,7 +8,7 @@ Live site: [Artistgram](https://artistgram.netlify.app/)
 <img src="https://github.com/IngridGdesigns/oldagram/blob/main/images/appScreenshot.png" width="50%" height="50%">
 
 **Added Features**
-- like button - WIP - have to add styling
+- like button - added count and style when "liked"
 - render out in javascript using innterHTML
 
 #### Resources: 
