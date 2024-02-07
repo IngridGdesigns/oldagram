@@ -79,7 +79,7 @@ function work() { /*...*/
         allInputs[index].addEventListener("click", function (e) {
             e.preventDefault();
                 
-            btnHeart.style = `background: url('${redHeart}') center / cover no-repeat`
+            btnHeart[index].style = `background: url('${redHeart}') center / cover no-repeat`
             // btnHeart[index].style= "height: 30px"
 
             let counts = post.likes + 1;
