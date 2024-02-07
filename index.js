@@ -54,12 +54,12 @@ function work() { /*...*/
             </section>
             
             <section class="container" >
-                <img src="${posts[i].post}" class="img-post">
+                <img src="${posts[i].post}" class="img-post" alt="image of ${posts[i].post}>
             </section>
             
             <section class="container">
                 <div class="flex space">
-                    <input id="btn-heart" type="button" class="icon heart" alt="Submit" role="icon" aria-label="a heart">
+                    <input id="btn-heart" type="button" class="icon heart" alt="Submit" role="icon" aria-label="a icon heart like button">
                     <img src="${comment}" class="icon">
                     <img src="${dm}" class="icon">
                 </div>
