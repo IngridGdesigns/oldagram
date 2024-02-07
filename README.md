@@ -4,7 +4,7 @@
 Solo project to build a Oldagram (fake instagram mini page) using DOM, HTML, CSS. 
 
 
-<img src="https://github.com/IngridGdesigns/oldagram/blob/main/appScreenshot.png" width="50%" height="50%">
+<img src="https://github.com/IngridGdesigns/oldagram/blob/main/images/appScreenshot.png" width="50%" height="50%">
 
 **Added Features**
 - like button - WIP - have to add styling
