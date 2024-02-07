@@ -80,7 +80,7 @@ function work() { /*...*/
 
             const btnHeart = document.getElementsByClassName("heart");   
             btnHeart[index].style = `background: url('${redHeart}') center / cover no-repeat`
-            // btnHeart[index].style= "height: 30px"
+            btnHeart[index].style= "height: 30px"
 
             let counts = post.likes + 1;
 
