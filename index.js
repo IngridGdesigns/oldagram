@@ -75,10 +75,14 @@ function work() { /*...*/
     posts.forEach((post, index) => {
 
     let allInputs = document.querySelectorAll("input");
-    allInputs[index].addEventListener("click", function(e){
-        let counts = post.likes + 1;
+        allInputs[index].addEventListener("click", function (e) {
+            e.preventDefault();
+                
+            btnHeart[index].style = "background: url('images/red-heart.png') center / cover no-repeat; height: 30px;"
 
-        likesEl[index].innerHTML = `${counts} likes`;
+            let counts = post.likes + 1;
+
+            likesEl[index].innerHTML = `${counts} likes`;
     
         });
     })

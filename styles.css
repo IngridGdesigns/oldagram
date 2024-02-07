@@ -56,11 +56,11 @@ html, body {
        */
    }
 
-input[type=button]:focus,
+/* input[type=button]:focus,
 input[type="submit"]:focus{
     background: url('images/red-heart.png') center / cover no-repeat;
     height: 30px;
-} 
+}  */
 
 
 /* header */
