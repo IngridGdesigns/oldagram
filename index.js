@@ -42,7 +42,7 @@ const posts = [
 
 const postsEl = document.getElementById("all-posts");
 
-function work() { /*...*/
+function postElements() { /*...*/
     
     for (let i = 0; i < posts.length; i++) {
        
@@ -90,7 +90,7 @@ function work() { /*...*/
   
 };
 
-document.onload = work()
+document.onload = postElements()
 
 
 // const postEl = document.getElementById("post-el")
