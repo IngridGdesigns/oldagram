@@ -7,6 +7,7 @@ import post3 from './images/post-ducreux.jpg';
 import heart from './images/icon-heart.png';
 import comment from './images/icon-comment.png';
 import dm from './images/icon-dm.png';
+import redHeart from './images/red-heart.png';
  
 
 const posts = [
@@ -78,7 +79,8 @@ function work() { /*...*/
         allInputs[index].addEventListener("click", function (e) {
             e.preventDefault();
                 
-            btnHeart[index].style = "background: url('images/red-heart.png') center / cover no-repeat; height: 30px;"
+            btnHeart[index].style = `background: url('${redHeart}') center / cover no-repeat`
+            btnHeart[index].style= "height: 30px"
 
             let counts = post.likes + 1;
 
