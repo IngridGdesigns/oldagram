@@ -11,6 +11,10 @@ Live site: [Artistgram](https://artistgram.netlify.app/)
 - like button - added count and style when "liked"
 - render out in javascript using innterHTML
 
+***WIP***
+- add ability to "dislike", remove like 
+- add more styling
+
 #### Resources: 
 
 - [Background url styling](https://www.digitalocean.com/community/tutorials/how-to-apply-background-styles-to-html-elements-with-css)
