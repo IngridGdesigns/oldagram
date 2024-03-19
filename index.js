@@ -79,8 +79,8 @@ function postElements() { /*...*/
             e.preventDefault();
 
             const btnHeart = document.getElementsByClassName("heart");  
-            btnHeart[index].classList.toggle('toggleHeart');
-            // btnHeart[index].style = `background: url('${redHeart}') center / cover no-repeat; height: 30px`
+            // btnHeart[index].classList.toggle("toggleHeart");
+            btnHeart[index].style = `background: url('${redHeart}') center / cover no-repeat; height: 30px`
 
             let counts = post.likes + 1;
 
