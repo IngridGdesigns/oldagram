@@ -37,6 +37,11 @@ html, body {
     width: 8%;
 }
 
+.toggleHeart {
+    background: url('images/red-heart.png') center / cover no-repeat;
+    height: 30px;
+}
+
    input[type=button],
    input[type=submit] {
        background: url('images/icon-heart.png');
@@ -126,4 +131,5 @@ p{
 section {
     margin: 20px 0;
 }
+
 
